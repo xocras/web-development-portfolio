@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flag</title>
+  <style>
+    body {
+      display: block;
+
+      width: 900px;
+      padding: 16px;
+
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .white-canvas {
+      background-color: white;
+      position: relative;
+      height: 600px;
+
+      border: 1px black solid;
+    }
+
+    .white-canvas>div:first-of-type>div:first-of-type {
+      background-color: #002B5D;
+      height: 250px;
+      width: 400px;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .white-canvas>div:first-of-type>div:last-of-type {
+      background-color: #C31024;
+      height: 250px;
+      width: 400px;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .white-canvas>div:last-of-type>div:first-of-type {
+      background-color: #C31024;
+      height: 250px;
+      width: 400px;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .white-canvas>div:last-of-type>div:last-of-type {
+      background-color: #002B5D;
+      height: 250px;
+      width: 400px;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    img {
+      width: 100px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dominican Republic</h1>
+
+  <div class="white-canvas">
+
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <img src="./assets/images/coat_of_arms.png" alt="Dominican Republic's Coat of Arms">
+
+  </div>
+
+</body>
+
+</html>
